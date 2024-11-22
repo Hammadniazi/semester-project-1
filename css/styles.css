@@ -123,7 +123,7 @@ label .close {
   height: var(--full-value);
   transition: 3s ease-in-out;
   z-index: 10;
-  top: 55px;
+  top: 84px;
   right: 0;
   background-color: var(--main-color);
 }
