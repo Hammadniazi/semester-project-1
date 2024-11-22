@@ -3,10 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <meta name="description" content="Meseum (Community Science Meseum)" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/3cc0008f2c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Home | Community Science Meseum</title>
   </head>
   <body>
-    <h1>Hello World</h1>
-    <h2>Hello again</h2>
+    <header class="l-header">
+      <div class="c-nav-bar">
+        <div>
+          <img
+            src="./media/images/Logo-community science meseum.png"
+            alt="logo-community science meseum"
+            class="logo-image"
+            aria-describedby="Logo of the meseum"
+          />
+        </div>
+        <!-- Hamburger manu -->
+
+        <input type="checkbox" id="manu-checkbox" class="manu-checkbox" />
+        <label for="manu-checkbox" class="hamburger-icon"
+          ><span class="fas fa-bars hamburger"></span>
+          <span class="fa-solid fa-xmark close"></span
+        ></label>
+
+        <nav class="c-nav-bar-list">
+          <a href="./index.html" class="active">Home</a>
+          <a href="/">Exhibition</a>
+          <a href="/">Explore</a>
+          <a href="/">Events</a>
+          <a href="/">Visit Us</a>
+          <a href="/">Get Involved</a>
+        </nav>
+
+        <!-- <div class="c-nav-icons">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-user"></i>
+          <i class="fa-regular fa-heart"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div> -->
+      </div>
+    </header>
   </body>
 </html>
