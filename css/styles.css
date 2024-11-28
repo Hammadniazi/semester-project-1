@@ -286,7 +286,7 @@ nav .active {
 }
 
 /* Exhibition-Section */
-.heading-exhibition {
+.heading-h1 {
   display: flex;
   justify-content: center;
   position: absolute;
@@ -375,6 +375,39 @@ nav .active {
 }
 .descrition-2 p {
   padding: 0px 40px;
+}
+/* Explore-page */
+.explore-feature-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.descrition-explore-together {
+  background-color: #096971;
+  color: var(--white-color);
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 20px 40px;
+  gap: var(--gap-xxl);
+}
+.col-left-explore-together {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 300px;
+  /* justify-content: center; */
+}
+.col-left-explore-together p {
+  text-align: justify;
+  padding-right: 10px;
+  line-height: 1.6;
+}
+.col-right-explore-together {
+  flex: 1;
+  min-width: 300px;
 }
 
 /* footer-section */
