@@ -67,6 +67,13 @@ body {
   font-family: Poppins, sans-serif;
   font-size: var(--font-s);
 }
+body h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+}
 .l-header {
   flex: 1 0 auto;
   animation: flyin 1s ease-in-out;
@@ -408,6 +415,101 @@ nav .active {
 .col-right-explore-together {
   flex: 1;
   min-width: 300px;
+}
+/* Events-page */
+.event-feature-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-lg);
+  padding: 20px;
+}
+.event-sub-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.events-container {
+  display: flex;
+  gap: var(--gap-xxl);
+}
+.col-left-event {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-xs);
+}
+.inner-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #9c1a5f;
+  padding: 10px;
+  max-width: 300px;
+  color: var(--white-color);
+}
+.inner-col p {
+  text-align: justify;
+}
+.inner-col-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--tertiary-color);
+  padding: 10px;
+  max-width: 300px;
+  color: var(--white-color);
+}
+.inner-col-1 p {
+  text-align: justify;
+}
+.inner-col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #479ac7;
+  padding: 10px;
+  max-width: 300px;
+  color: var(--white-color);
+}
+.inner-col-2 p {
+  text-align: justify;
+}
+.image-events {
+  width: 100%;
+}
+.btn-container-read-more {
+  display: flex;
+  justify-content: end;
+}
+.btn-read-more {
+  text-align: center;
+  background-color: var(--secondry-color);
+  color: var(--black-color);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 0.3rem;
+}
+.more-events {
+  display: flex;
+  justify-content: center;
+}
+.upcoming-events {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap-lg);
+  padding: 20px;
+}
+.upcoming-event-col {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  align-items: center;
+}
+.announce-event-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* footer-section */
