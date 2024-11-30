@@ -11,13 +11,15 @@
   --gap-lg: 1.2rem;
   --gap-xl: 1.5rem;
   --gap-xxl: 2rem;
+  --gap-xxxl: 3rem;
 
   --font-xs: 0.5rem;
   --font-s: 0.8rem;
   --font-md: 1rem;
-  --font-l: 1.3rem;
+  --font-l: 1.5rem;
   --font-xl: 2rem;
-  --font-xxl: 2.4rem;
+  --font-xxl: 2.5rem;
+  --font-xxxl: 3rem;
 
   --main-color: #645dd7;
   --black-color: #000000;
@@ -36,13 +38,15 @@
     --gap-lg: 1.2rem;
     --gap-xl: 1.5rem;
     --gap-xxl: 2rem;
+    --gap-xxxl: 3rem;
 
     --font-xs: 0.5rem;
     --font-s: 0.8rem;
     --font-md: 1rem;
-    --font-l: 1.3rem;
+    --font-l: 1.5rem;
     --font-xl: 2rem;
-    --font-xxl: 3rem;
+    --font-xxl: 2.5rem;
+    --font-xxxl: 3rem;
 
     --main-color: #645dd7;
     --secondry-color: #ffc40c;
@@ -316,11 +320,13 @@ nav .active {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  gap: var(--gap-md);
 }
 .draw-line {
   width: 90px;
   height: 4px;
   background-color: var(--tertiary-color);
+  margin: 0px;
 }
 .descrition {
   display: flex;
@@ -353,11 +359,6 @@ nav .active {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-.draw-line-1 {
-  width: 90px;
-  height: 4px;
-  background-color: #b25084;
-}
 .descrition-1 {
   display: flex;
   flex-direction: column;
@@ -368,11 +369,7 @@ nav .active {
 .descrition-1 p {
   padding: 0px 40px;
 }
-.draw-line-2 {
-  width: 90px;
-  height: 4px;
-  background-color: #479ac7;
-}
+
 .descrition-2 {
   display: flex;
   flex-direction: column;
@@ -621,6 +618,7 @@ nav .active {
 .accessibility-disc p {
   text-align: center;
 }
+
 /* form-section */
 .draw-line-form {
   width: 90px;
@@ -677,6 +675,65 @@ nav .active {
 .c-radio {
   display: flex;
   flex-direction: column;
+}
+/* Get Involved */
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../media/images/exhibition-.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.heading-hero {
+  position: absolute;
+  color: var(--main-color);
+  /* color: var(--white-color); */
+  font-size: var(--font-xxxl);
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.donation-sec-container {
+  background-color: var(--tertiary-color);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 40px;
+}
+.donation-col-left {
+  color: var(--white-color);
+  padding-left: 20px;
+}
+.donation-col-right {
+  color: var(--white-color);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 40px;
+  gap: var(--gap-xxl);
+}
+.volunteer-sec-container {
+  background-color: #479ac7;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 40px;
+}
+.internship-sec-container {
+  background-color: #9c1a5f;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 40px;
+}
+.heading-line-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-xs);
 }
 
 /* footer-section */
@@ -740,4 +797,62 @@ nav .active {
 .right-footer a:hover {
   color: var(--secondry-color);
   scale: 1.1;
+}
+/* Utilities */
+
+.draw-line {
+  width: 90px;
+  height: 4px;
+  background-color: var(--tertiary-color);
+  margin: 0px;
+}
+
+.draw-line-2 {
+  width: 90px;
+  height: 4px;
+  background-color: #479ac7;
+  margin: 0;
+}
+.draw-line-1 {
+  width: 90px;
+  height: 4px;
+  background-color: #b25084;
+  margin: 0;
+}
+
+@media (width <= 768px) {
+  .heading-hero {
+    font-size: var(--font-xl);
+  }
+  .image-container {
+    height: 500px;
+  }
+}
+@media (width <= 600px) {
+  .donation-sec-container {
+    grid-template-columns: auto;
+    padding: 20px;
+  }
+  .volunteer-sec-container {
+    grid-template-columns: auto;
+    padding: 20px;
+  }
+  .internship-sec-container {
+    grid-template-columns: auto;
+    padding: 20px;
+  }
+}
+@media (width <= 440px) {
+  .donation-col-left {
+    padding-left: 0px;
+  }
+  .donation-col-right {
+    padding: 0px;
+  }
+  .heading-hero {
+    font-size: var(--font-l);
+  }
+  .image-container {
+    height: 400px;
+  }
 }
