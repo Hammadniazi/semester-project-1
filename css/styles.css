@@ -511,6 +511,173 @@ nav .active {
   flex-direction: column;
   align-items: center;
 }
+/* visit-us-page */
+.visit-sub-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.visit-sub-heading h3 {
+  color: var(--tertiary-color);
+}
+.visit-cols-container {
+  color: var(--white-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  gap: var(--gap-xxl);
+}
+.draw-line-visit {
+  width: 90px;
+  height: 4px;
+  background-color: var(--white-color);
+  margin: 0px;
+}
+.col-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-xs);
+}
+.col-heading p {
+  margin: 0px;
+  color: var(--secondry-color);
+}
+
+.col-sec-visit {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--tertiary-color);
+  justify-content: space-between;
+  max-width: 300px;
+  padding: 20px;
+  gap: var(--gap-md);
+}
+.opening-timing {
+  display: flex;
+  justify-content: space-between;
+  gap: 7rem;
+}
+.day-time {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xs);
+}
+
+.admission-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xs);
+  align-items: center;
+}
+.admission-details div p {
+  text-align: justify;
+}
+.details {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: var(--gap-xxl);
+}
+.fa-solid {
+  color: var(--secondry-color);
+}
+.map-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.c-map-ifram {
+  padding: 20px;
+  width: 100%;
+}
+/* facilities section */
+.facilities-cols-container {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--white-color);
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  gap: var(--gap-xxl);
+}
+.col-sec-facility {
+  display: flex;
+  flex-direction: column;
+  background-color: #a22869;
+  /* justify-content: space-between; */
+  max-width: 300px;
+  padding: 20px;
+  gap: var(--gap-xxl);
+}
+.accessibility-disc {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-md);
+  align-items: center;
+}
+.accessibility-disc p {
+  text-align: center;
+}
+/* form-section */
+.draw-line-form {
+  width: 90px;
+  height: 4px;
+  background-color: #479ac7;
+  margin: 0px;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 20px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-md);
+  background-color: #479ac7;
+  max-width: 600px;
+  padding: 20px 30px;
+}
+.c-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-md);
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.c-sec1-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-md);
+  justify-content: center;
+  width: 100%;
+}
+.c-name-form {
+  display: flex;
+  gap: var(--gap-xs);
+}
+.c-email-phone {
+  display: flex;
+  gap: var(--gap-xs);
+}
+.c-input-label {
+  display: flex;
+  flex-direction: column;
+  gap: var(--font-xs);
+}
+.c-input {
+  display: block;
+  padding: 5px;
+}
+.c-radio {
+  display: flex;
+  flex-direction: column;
+}
 
 /* footer-section */
 .c-footer {
