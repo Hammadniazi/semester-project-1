@@ -184,36 +184,40 @@ nav .active {
   color: var(--black-color);
 }
 /* Hero section */
-.image-hero {
+.image-container-2 {
   position: relative;
-  width: var(--full-value);
-  height: auto;
-}
-.heading-home {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../media/images/hero-pics.png);
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.heading-hero-2 {
   position: absolute;
   color: var(--white-color);
-  margin: 0px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 48px;
-  align-items: center;
+  font-size: var(--font-xxl);
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
-.call-to-action {
-  display: flex;
-  justify-content: center;
-  background-color: var(--secondry-color);
-  color: var(--black-color);
-  width: 220px;
-  height: 62px;
-  align-items: center;
+.cta-btn {
   position: absolute;
   left: 40px;
-  top: 350px;
-  border-radius: 3px;
+  bottom: 40px;
   text-decoration: none;
+  font-size: var(--font-md);
+  font-weight: 500;
+  background-color: var(--secondry-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.cta-btn:hover {
+  background-color: var(--main-color);
+  scale: 1.1;
 }
 
 /* display-section */
@@ -255,14 +259,23 @@ nav .active {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  max-width: 450px;
+  max-width: 500px;
+  gap: var(--gap-md);
 }
 .right-col {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 450px;
+  max-width: 500px;
+  gap: var(--gap-md);
+}
+@media (width <= 768px) {
+  .left-col,
+  .right-col {
+    max-width: 100%;
+    padding: 20px;
+  }
 }
 
 /* image-section */
@@ -292,9 +305,20 @@ nav .active {
 .col-left-explore p {
   text-align: justify;
 }
+.inner-col-left-explore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-s);
+}
 .image-explore {
-  max-width: 100%;
-  height: 279px;
+  width: 100%;
+  /* height: 279px; */
+}
+@media (width <= 600px) {
+  .col-left-explore {
+    max-width: 100%;
+  }
 }
 
 /* Exhibition-Section */
@@ -393,7 +417,7 @@ nav .active {
 .heading-hero-1 {
   position: absolute;
   color: var(--white-color);
-  font-size: var(--font-xxxl);
+  font-size: var(--font-xxl);
   padding: 10px 20px;
   background: rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -546,26 +570,6 @@ nav .active {
   align-items: center;
 }
 /* visit-us-page */
-.image-container-2 {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-image: url(../media/images/hero-pics.png);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.heading-hero-2 {
-  position: absolute;
-  color: var(--white-color);
-  font-size: var(--font-xxxl);
-  padding: 10px 20px;
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
 
 .visit-sub-heading {
   display: flex;
@@ -577,6 +581,11 @@ nav .active {
   color: var(--tertiary-color);
   font-size: var(--font-l);
   text-align: center;
+}
+.c-about {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 .visit-cols-container {
   color: var(--white-color);
@@ -767,7 +776,7 @@ textarea {
   position: absolute;
   color: var(--main-color);
   /* color: var(--white-color); */
-  font-size: var(--font-xxxl);
+  font-size: var(--font-xxl);
   padding: 10px 20px;
   background: rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -812,10 +821,10 @@ textarea {
 /* footer-section */
 .c-footer {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
   background-color: #645dd7;
-  padding: 10px 50px;
+  padding: 10px 40px;
 }
 
 .c-footer p {
@@ -826,6 +835,7 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .name-museum {
   color: #3fa752 !important;
@@ -836,6 +846,24 @@ textarea {
   flex-direction: column;
   align-items: center;
   gap: var(--gap-md);
+  text-align: center;
+}
+@media (width <= 768px) {
+  .middle-footer {
+    gap: var(--gap-xs);
+  }
+  .c-footer {
+    padding: 10px 30px;
+  }
+}
+@media (width <= 490px) {
+  .c-footer {
+    font-size: var(--font-xs);
+    padding: 10px;
+  }
+  .social-icon {
+    font-size: var(--font-md);
+  }
 }
 .c-social-links {
   display: flex;
@@ -872,6 +900,10 @@ textarea {
   scale: 1.1;
 }
 /* Utilities */
+
+.u-sec-gutter {
+  padding-top: 50px;
+}
 
 .draw-line {
   width: 90px;
