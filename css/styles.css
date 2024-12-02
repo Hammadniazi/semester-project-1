@@ -119,9 +119,11 @@ p {
   width: 64px;
   height: 65px;
 }
-
-/* Hamburger menu */
-
+@media (width <= 768px) {
+  .c-nav-bar {
+    padding: 0px 20px;
+  }
+} /* Hamburger menu */
 nav,
 .manu-checkbox,
 .c-nav-bar-list,
@@ -136,7 +138,7 @@ label .close {
   height: var(--full-value);
   transition: 3s ease-in-out;
   z-index: 10;
-  top: 84px;
+  top: 68px;
   right: 0;
   background-color: var(--main-color);
 }
@@ -178,7 +180,7 @@ nav a:hover {
   text-decoration: underline;
   border-radius: 0.5rem;
 }
-nav .active {
+nav a.active {
   background-color: var(--secondry-color);
   border-radius: 0.5rem;
   color: var(--black-color);
@@ -824,7 +826,7 @@ textarea {
   /* flex-wrap: wrap; */
   justify-content: space-between;
   background-color: #645dd7;
-  padding: 10px 40px;
+  padding: 10px 50px;
 }
 
 .c-footer p {
