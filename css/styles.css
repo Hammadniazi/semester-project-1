@@ -217,6 +217,9 @@ nav a.active {
   padding: 10px 20px;
   border-radius: 5px;
 }
+.cta-btn:focus {
+  outline: 2px solid var(--white-color);
+}
 .cta-btn:hover {
   background-color: var(--main-color);
   scale: 1.1;
@@ -536,13 +539,16 @@ nav a.active {
   display: flex;
   justify-content: end;
 }
-.btn-read-more {
+.submit-btn {
   text-align: center;
   background-color: var(--secondry-color);
   color: var(--black-color);
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 0.3rem;
+}
+.submit-btn:focus {
+  outline: 2px solid var(--black-color);
 }
 .more-events {
   display: flex;
