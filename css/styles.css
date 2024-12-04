@@ -82,12 +82,16 @@ p {
 .l-header {
   flex: 1 0 auto;
   animation: flyin 1s ease-in-out;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100vw;
 }
 .l-main {
   flex: 2 1 auto;
 }
 .l-footer {
-  padding-top: 60px;
+  padding-top: 30px;
   animation: slide-in-up 1s cubic-bezier(0, -0.03, 0.15, 1.11);
 }
 @keyframes flyin {
@@ -135,7 +139,7 @@ label .close {
   position: absolute;
   cursor: pointer;
   width: 150px;
-  height: var(--full-value);
+
   transition: 3s ease-in-out;
   z-index: 10;
   top: 68px;
@@ -180,11 +184,12 @@ nav a:hover {
   text-decoration: underline;
   border-radius: 0.5rem;
 }
-nav a.active {
+.active {
   background-color: var(--secondry-color);
   border-radius: 0.5rem;
   color: var(--black-color);
 }
+
 /* Hero section */
 .image-container-2 {
   position: relative;
@@ -460,6 +465,7 @@ nav a.active {
   min-width: 300px;
 }
 .col-left-explore-together p {
+  font-size: var(--font-md);
   text-align: justify;
   line-height: 1.6;
 }
@@ -851,8 +857,8 @@ textarea {
   align-items: center;
   text-align: center;
 }
-.name-museum {
-  color: #3fa752 !important;
+.name-museum:hover {
+  color: var(--secondry-color) !important;
 }
 
 .middle-footer {
