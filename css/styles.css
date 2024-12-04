@@ -371,7 +371,8 @@ nav a:hover {
   padding: 20px;
 }
 .descrition p {
-  padding: 0px 40px;
+  padding: 0px 10px;
+  text-align: justify;
 }
 .pic-section {
   display: grid;
@@ -400,7 +401,7 @@ nav a:hover {
   width: 100%;
   color: var(--white-color);
   background-color: #b25084;
-  padding: 20px;
+  padding: 10px;
   gap: var(--gap-md);
 }
 .descrition-1 p {
@@ -414,7 +415,7 @@ nav a:hover {
   width: 100%;
   color: var(--white-color);
   background-color: #479ac7;
-  padding: 20px;
+  padding: 10px;
   gap: var(--gap-md);
 }
 .descrition-2 p {
@@ -460,7 +461,7 @@ nav a:hover {
 }
 @media (width <=400px) {
   .descrition-explore-together {
-    padding: 10px;
+    padding: 20px;
   }
 }
 .col-left-explore-together {
@@ -470,9 +471,8 @@ nav a:hover {
   min-width: 300px;
 }
 .col-left-explore-together p {
-  font-size: var(--font-md);
+  font-size: var(--font-s);
   text-align: justify;
-  line-height: 1.6;
 }
 .col-right-explore-together {
   flex: 1;
