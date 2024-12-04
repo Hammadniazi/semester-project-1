@@ -91,7 +91,7 @@ p {
   flex: 2 1 auto;
 }
 .l-footer {
-  padding-top: 30px;
+  padding-top: 20px;
   animation: slide-in-up 1s cubic-bezier(0, -0.03, 0.15, 1.11);
 }
 @keyframes flyin {
@@ -237,6 +237,11 @@ nav a:hover {
   width: 100%;
   gap: var(--gap-md);
   padding: 10px 40px;
+}
+@media (width <= 768px) {
+  .display-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .display-section img {
   width: 100%;
@@ -719,7 +724,7 @@ nav a:hover {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-top: 20px;
+  padding: 20px;
 }
 .form {
   display: flex;
@@ -806,7 +811,7 @@ textarea {
   background-color: var(--tertiary-color);
   display: grid;
   grid-template-columns: auto 1fr;
-  padding: 40px;
+  padding: 20px;
 }
 .donation-col-left {
   color: var(--white-color);
@@ -844,7 +849,7 @@ textarea {
   /* flex-wrap: wrap; */
   justify-content: space-between;
   background-color: #645dd7;
-  padding: 10px 50px;
+  padding: 20px 50px;
 }
 
 .c-footer p {
@@ -873,7 +878,7 @@ textarea {
     gap: var(--gap-xs);
   }
   .c-footer {
-    padding: 10px 30px;
+    padding: 20px 30px;
   }
 }
 @media (width <= 490px) {
