@@ -7,11 +7,11 @@ This project was created from scratch with netlify.
 <!-- You must replace these links -->
 
 - [Brief](https://lms.noroff.no/pluginfile.php/339047/mod_resource/content/3/Semester%20Project%201.pdf)
+- [Live-version](https://semester-project1-hammad.netlify.app/)
 - [Design](https://www.figma.com/proto/8yyzwzyCUUv2mEFWcxjGO0/Community-Science-Museum?node-id=99-71&t=f6KPc28BfVmLRtdx-1&scaling=contain&content-scaling=fixed)
 - [Github-repository](https://github.com/Hammadniazi/semester-project-1)
-- [Live-version](https://semester-project1-hammad.netlify.app/)
-- [API Docs](_LINK_TO_API_DOCS_)
-- [API Endpoint](_LINK_TO_API_DOC)
+- [Project-Board](https://github.com/users/Hammadniazi/projects/6/views/1)
+-
 
 ## Deployment
 
