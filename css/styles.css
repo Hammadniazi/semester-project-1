@@ -366,11 +366,6 @@ nav a:hover {
   padding: 10px 30px;
   border-radius: 0.3rem 0 0 0.3rem;
 }
-@media (width <= 440px) {
-  .email-input {
-    padding: 10px 20px;
-  }
-}
 .email-input :focus {
   outline: 2px solid var(--black-color);
 }
@@ -385,6 +380,15 @@ nav a:hover {
 }
 .subcribe-btn:hover {
   background-color: var(--main-color);
+}
+@media (width <= 440px) {
+  .email-input {
+    padding: 5px;
+    flex-wrap: nowrap;
+  }
+  .subcribe-btn {
+    padding: 5px;
+  }
 }
 /* Exhibition-Section */
 
