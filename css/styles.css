@@ -91,7 +91,7 @@ p {
   flex: 2 1 auto;
 }
 .l-footer {
-  padding-top: 20px;
+  padding-top: 30px;
   animation: slide-in-up 1s cubic-bezier(0, -0.03, 0.15, 1.11);
 }
 @keyframes flyin {
@@ -336,7 +336,56 @@ nav a:hover {
     max-width: 100%;
   }
 }
+.letter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  gap: var(--gap-xxl);
+  width: 100%;
+  background-color: rgb(202, 211, 212);
+}
+.inner-letter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-xs);
+}
+.inner-letter-container p {
+  font-size: var(--font-md);
+  text-align: center;
+}
+.subcribe-email-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* gap: var(--gap-xs); */
+}
+.email-input {
+  flex: 1;
+  padding: 10px 30px;
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+@media (width <= 440px) {
+  .email-input {
+    padding: 10px 20px;
+  }
+}
+.email-input :focus {
+  outline: 2px solid var(--black-color);
+}
 
+.subcribe-btn {
+  text-align: center;
+  background-color: var(--secondry-color);
+  color: var(--white-color);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 0 0.3rem 0.3rem 0;
+}
+.subcribe-btn:hover {
+  background-color: var(--main-color);
+}
 /* Exhibition-Section */
 
 .sub-heading-exhib {
@@ -459,11 +508,6 @@ nav a:hover {
   padding: 20px 40px;
   gap: var(--gap-xxl);
 }
-@media (width <=400px) {
-  .descrition-explore-together {
-    padding: 20px;
-  }
-}
 .col-left-explore-together {
   display: flex;
   flex-direction: column;
@@ -481,6 +525,7 @@ nav a:hover {
 @media (width <= 768px) {
   .descrition-explore-together {
     flex-direction: column;
+    padding: 20px;
   }
 }
 /* Events-page */
@@ -556,6 +601,7 @@ nav a:hover {
   display: flex;
   justify-content: end;
 }
+
 .submit-btn {
   text-align: center;
   background-color: var(--secondry-color);
