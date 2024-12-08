@@ -19,7 +19,13 @@ Deployment is done via hosting provider Netlify.
 
 ## Report
 
-_ADD_YOUR_REPORT_HERE_
+ https://docs.google.com/document/d/1E0MssgT5bFIwczYoaTaN64nOEzbvEXABkgpfzMGNu1I/edit?tab=t.0
+
+ ## Getting Started
+
+In the project directory, you can run:
+
+- Run index html with dev server
 
 
 ## Minimum acceptence criteria (Required - 50%)
