@@ -339,6 +339,9 @@ nav a:hover {
     max-width: 100%;
   }
 }
+.inner-col-left-explore h3 {
+  color: var(--black-color);
+}
 .letter-container {
   display: flex;
   flex-direction: column;
